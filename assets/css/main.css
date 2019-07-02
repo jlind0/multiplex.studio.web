@@ -2298,6 +2298,12 @@
 				width: 100%;
 			}
 
+			.news-item-header{
+				background: #4278b8;
+				color: white;
+				font-weight: bold;
+			}
+
 /* List */
 
 	ol {
@@ -2937,7 +2943,20 @@
 			}
 
 /* Banner */
-
+#banner-child {
+	padding: 4em 0 2em 0;
+	background:black;
+	text-align: left;
+	border-top: 0.5em solid black;
+}
+#banner-child h1 {
+	font-size: 3.5em;
+	font-weight: 100;
+	color: #fff;
+	line-height: 1em;
+	margin: 0 0 0.5em 0;
+	padding: 0;
+}
 	#banner {
 		padding: 12em 0 10em 0;
 		background-image: url('../../images/newbk.gif');
@@ -2948,7 +2967,9 @@
 		text-align: center;
 		border-top: 0.5em solid black;
 	}
-
+	.box.press-item{
+		text-align: left;
+	}
 		#banner h1 {
 			font-size: 3.5em;
 			font-weight: 100;
