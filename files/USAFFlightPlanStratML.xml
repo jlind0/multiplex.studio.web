@@ -1,0 +1,676 @@
+<OrganizationalStrategyDocument>
+	<Identifier>USAFFlightPlan</Identifier>
+	<Name>United States Air Force Energy Flight Plan</Name>
+	<Description>Enforcing Mission Assurance through Energy Assurance</Description>
+	<Organization>
+		<Identifier>USAF</Identifier>
+		<Name>United States Air Force</Name>
+		<Acronym>USAF</Acronym>
+		<Strategy>
+			<Mission>
+				<Description>Fly, Fight and Win in Air, Space and Cyberspace</Description>
+				<Stakeholders>
+					<Organization>
+						<Identifier>USAFEnergy</Identifier>
+						<Name>United States Air Force Energy Flight Plan Committee</Name>
+						<SpecialType>Committee</SpecialType>
+						<Strategy>
+							<Mission>
+								<Description>The goals and objectives outlined in this Flight Plan define what success means to the Air Force in the context of the Strategic Master Plan</Description>
+								<Stakeholders>
+									<Individual>
+										<Identifier>ASECEng</Identifier>
+										<Name>Miranda A.A. Ballentine</Name>
+										<GivenName>Miranda</GivenName>
+										<Surname>Ballentine</Surname>
+										<Contact>
+											<EmailAddress>
+												<Email>miranda.aa.ballentine.civ@mail.mil</Email>
+											</EmailAddress>
+										</Contact>
+										<Role>
+											<RoleType>Performer</RoleType>
+										</Role>
+									</Individual>
+								</Stakeholders>
+								<Risk><Identifier>MissionRisks_Cyber</Identifier></Risk>
+								<Risk><Identifier>MissionRisks_Physical</Identifier></Risk>
+								<Risk><Identifier>MissionRisks_SevereWeather</Identifier></Risk>
+							</Mission>
+							<Vision><Description>Enhance Mission Assurance through Energy Assurance</Description></Vision>
+							
+ 
+							<Value>
+								<Identifier>Financial</Identifier>
+								<Map>
+									<Type>Input</Type>
+									<Type>Output</Type>
+									<MappedIdentifier>EnergyCost</MappedIdentifier>
+								</Map>
+								<Risk><Identifier>FinancialRisks_BudgetShare</Identifier></Risk>
+								<Risk><Identifier>FinancialRisks_Austerity</Identifier></Risk>
+							</Value>
+							<Value>
+								<Identifier>Geopolitical</Identifier>
+								<Map>
+									<Type>Input</Type>
+									<Type>Output</Type>
+									<MappedIdentifier>OptimizeDemand</MappedIdentifier>
+								</Map>
+								<Risk><Identifier>GeopoliticalRisks_SupplyDemandGap</Identifier></Risk>
+								<Risk>
+									<Identifier>GeopoliticalRisks_Cost</Identifier>
+									<Map>
+										<Type>Input</Type>
+										<Type>Output</Type>
+										<MappedIdentifier>EnergyCost</MappedIdentifier>
+									</Map>
+								</Risk>
+								<Risk><Identifier>GeopoliticalRisks_Conflicts</Identifier></Risk>
+								<Risk><Identifier>GeopoliticalRisks_SupplyDisruption</Identifier></Risk>
+							</Value>
+							<Value>
+								<Identifier>Environmental</Identifier>
+								<Risk><Identifier>EnvironmentalRisks_Greenhouse</Identifier></Risk>
+								<Risk><Identifier>EnvironmentalRisks_Water</Identifier></Risk>
+								<Risk><Identifier>EnvironmentalRisks_FramlandUsage</Identifier></Risk>
+							</Value>
+							
+ 
+							<Goal>
+								<Identifier>ImproveResilency</Identifier>
+								<Name>Improve Resiliency</Name>
+								<Perspective>
+									<ReferenceIdentifier>ApproachToEnergy</ReferenceIdentifer>
+								</Perspective>
+								<Objective>
+									<Identifier>Resiliency_SinglePointFailure</Identifier>
+									<Name>Eliminate Single Point(s) of Failure</Name>
+									<Description>Eliminate 20% of the single point(s) of failure for facility energy associated with Air Force owned and operated critical infrastructure by FY25</Description>
+									<SequenceIdentifier>1.1</SequenceIdentifier>
+									<QuantitativePerformanceIndicator>
+										<MeasurementDimension>
+											<Identifier>MD_PointOfFailure</Identifier>
+											<Name>Points of Failure</Name>
+										</MeasurementDimension>
+										<UnitOfMeasurement>
+											<ReferenceIdentifier>Percent</ReferenceIdentifier>
+										</UnitOfMeasurement>
+										<Target>
+											<Result>
+												<StartDate>2017-01-01</StartDate>
+												<EndDate>2025-12-31</EndDate>
+												<NumberOfUnits>-20</NumberOfUnits>
+											</Result>
+										</Target>
+									</QuantitativePerformanceIndicator>
+								</Objective>
+								<Objective>
+									<Identifier>Resiliency_Technologies</Identifier>
+									<Name>Increase the use of energy resilience technology</Name>
+									<Description>By FY20, increase the use of energy resiliency technologies and partnerships for critical infrastructure to improve energy security. Incorporate energy resiliency considerations, such as cybersecure microgrids, for critical infrastructure by FY20.</Description>
+									<SequenceIdentifier>1.2</SequenceIdentifier>
+									<QualitativePerformanceIndicator>
+										<MeasurementDimension>
+											<Identifier>MD_EnergyResilience</Identifier>
+											<Name>Energy Resiliency</Name>
+											<Description>Ability to anticipate, prepare for, and adapt to changing conditions and withstand, respond to, and recovery rapidly from energy disruptions.</Description>
+										</MeasurementDimension>
+										
+									<Target>			
+											<Result>
+												<StartDate>2017-01-01</StartDate>
+												<EndDate>2020-12-31</EndDate>
+												<Descriptor>
+													<Name>Partnerships and Technologies</Name>
+													<Value>Increase use of energy resilient technologies and partnerships</Value>
+												</Descriptor>
+											</Result>
+											<Result>
+												<StartDate>2017-01-01</StartDate>
+												<EndDate>2020-12-31</EndDate>
+												<Descriptor>
+													<Name>Incorporate</Name>
+													<Value>energy resiliency considerations, such as cybersecure microgrids, for critical infrastructure by FY20.</Value>
+												</Descriptor>
+											</Result>
+										</Target>
+									</QualitativePerformanceIndicator>
+								</Objective>
+								<Objective>
+									<Identifier>FinalizeEnergyPlans</Identifier>
+									<Name>Finalize Energy Plans</Name>
+									<Description>By FY19, finalize energy plans for installations that together compose 75 percent of the Air Force’s installation energy consumption and include requirements to enhancing energy reliance.</Description>
+									<SequenceIdentifier>1.3</SequenceIdentifier>
+									<QuantitativePerformanceIndicator>
+										<MeasurementDimension>
+											<Identifier>MD_InstallationByEnergy</Identifier>
+											<Name>Installations by Energy Consumption</Name>
+										</MeasurementDimension>
+										<UnitOfMeasurement>
+											<ReferenceIdentifier>Percent</ReferenceIdentifier>
+										</UnitOfMeasurement>
+										<Target>
+											<Result>
+												<StartDate>2017-01-01</StartDate>
+												<EndDate>2019-12-31</EndDate>
+												<NumberOfUnits>75</NumberOfUnits>
+											</Result>
+										</Target>
+									</QuantitativePerformanceIndicator>
+								</Objective>
+ 
+							<Objective>
+									<Identifier>IncorporateAwarenessIntoTraining</Identifier>
+									<Name>Finalize Energy Plans</Name>
+									<Description>Incorporate energy awareness into training by FY18 to enable Airmen to recognize the impact of energy on critical operations<Description>
+									<SequenceIdentifier>1.4</SequenceIdentifier>
+									<QualitativePerformanceIndicator>
+										<MeasurementDimension>
+											<Identifier>MD_Training</Identifier>
+											<Name>Airmen Training</Name>
+										</MeasurementDimension>
+										<Target>
+											<Result>
+												<StartDate>2017-01-01</StartDate>
+												<EndDate>2018-12-31</EndDate>
+												<Descriptor>
+													<Name>Incorporate</Name>
+													<Value>Recognize impact of energy on critical operations</Value>
+												</Descriptor>
+											</Result>
+										</Target>
+									</QualitativePerformanceIndicator>
+								</Objective>
+								<Objective>
+									<Identifier>DevelopPartnerApproach</Identifier>
+									<Name>Develop Partnership Approach</Name>
+									<Description>Develop an approach by FY18 to partner with joint, international, federal, state, local and private partners to improve energy security<Description>
+									<SequenceIdentifier>1.5</SequenceIdentifier>
+									<QualitativePerformanceIndicator>
+										<MeasurementDimension>
+											<Identifier>MD_Partnership</Identifier>
+											<Name>Partners</Name>
+										</MeasurementDimension>
+										<Target>
+											<Result>
+												<StartDate>2017-01-01</StartDate>
+												<EndDate>2018-12-31</EndDate>
+												<Descriptor>
+													<Name>Approach</Name>
+													<Value>improve energy security</Value>
+												</Descriptor>
+											</Result>
+										</Target>
+									</QualitativePerformanceIndicator>
+								</Objective>
+								<Objective>
+									<Identifier>FinalizeEnergyPlans</Identifier>
+									<Name>Finalize Energy Plans</Name>
+									<Description>By FY36 all mission-critical functions will have assured access to a reliable supply to energy at all times<Description>
+									<SequenceIdentifier>1.6</SequenceIdentifier>
+									<QuantitativePerformanceIndicator>
+										<MeasurementDimension>
+											<Identifier>MD_AssuredAccessToReliableEnergy</Identifier>
+											<Name>Assured Access to Reliable Energy</Name>
+										</MeasurementDimension>
+										<UnitOfMeasurement>
+											<ReferenceIdentifier>Percent</ReferenceIdentifier>
+										</UnitOfMeasurement>
+										<Target>
+											<Result>
+												<StartDate>2017-01-01</StartDate>
+												<EndDate>2036-12-31</EndDate>
+												<NumberOfUnits>100</NumberOfUnits>
+											</Result>
+										</Target>
+									</QuantitativePerformanceIndicator>
+								</Objective>
+								<SuccessFactor>
+									<Name>Identify vulnerabilities</Name>
+									<Description>energy supplies, such as physical and cyber-attacks or natural disators</Description>
+									<Map>
+										<Type>Supports</Type>
+										<MappedIdentifier>Intent</MappedIdentifier>
+									</Map>
+									<Map>
+										<Type>Output</Type>
+										<MappedIdentifier>ImprovedResponsiveness</MappedIdentifier>
+									</Map>
+								</SuccessFactor>
+								
+ 
+								<SuccessFactor>
+									<Name>Mitigate Impacts</Name>
+									<Description>from disruptions in energy supplies to critical assets, installations and priority missions</Description>
+									<Map>
+										<Type>Supports</Type>
+										<MappedIdentifier>Intent</MappedIdentifier>
+									</Map>
+									<Map>
+										<Type>Output</Type>
+										<MappedIdentifier>IncreasedAbility</MappedIdentifier>
+									</Map>
+								</SuccessFactor>
+								<SuccessFactor>
+									<Name>Develop Ability</Name>
+									<Description>to prioritize resources against risks to the mission</Description>
+									<Map>
+										<Type>Supports</Type>
+										<MappedIdentifier>Intent</MappedIdentifier>
+									</Map>
+									<Map>
+										<Type>Output</Type>
+										<MappedIdentifier>PrioritizedResourcePlans</MappedIdentifier>
+									</Map>
+								</SuccessFactor>
+								<SuccessFactor>
+									<Name>Advance Security</Name>
+									<Description>Advance physical and cyber security solutions to protect critical energy assets and secure industrial controls systems</Description>
+									<Map>
+										<Type>Supports</Type>
+										<MappedIdentifier>Intent</MappedIdentifier>
+									</Map>
+								</SuccessFactor>
+								<SuccessFactor>
+									<Identifier>ImprovedResponsiveness</Identifier>
+									<Name>Improved Responsiveness</Name>
+									<Description>to disruptions to energy supply</Description>
+									<Map>
+										<Type>Supports</Type>
+										<MappedIdentifier>ExpectedOutcome</MappedIdentifier>
+									</Map>
+								</SuccessFactor>
+								
+								<SuccessFactor>
+									<Identifier>IncreasedAbility</Identifier>
+									<Name>Increased ability</Name>
+									<Description>to quickly resume normal operations and mitigate impact to the mission</Description>
+									<Map>
+										<Type>Supports</Type>
+										<MappedIdentifier>ExpectedOutcome</MappedIdentifier>
+									</Map>
+								</SuccessFactor>
+								<SuccessFactor>
+									<Identifier>PrioritizedResourcePlans</Identifier>
+									<Name>Prioritized Resource Plans and Solutions</Name>
+									<Description>to mitigate risks from the tail (logistics supply chain) and the tooth (energy demand in operations)</Description>
+									<Map>
+										<Type>Supports</Type>
+										<MappedIdentifier>ExpectedOutcome</MappedIdentifier>
+									</Map>
+								</SuccessFactor>
+								<SuccessFactor>
+									<Identifier>AssuredAbility</Identifier>
+									<Name>Assured Ability</Name>
+									<Description>to provide energy for mission-critical function</Description>
+									<Map>
+										<Type>Supports</Type>
+										<MappedIdentifier>ExpectedOutcome</MappedIdentifier>
+									</Map>
+								</SuccessFactor>
+							</Goal>
+							<Goal>
+								<Identifier>OptimizeDemand</Identifier>
+								<Name>Optimize Demand</Name>
+								<Perspective>
+									<ReferenceIdentifier>ApproachToEnergy</ReferenceIdentifer>
+								</Perspective>
+								<SuccessFactor>
+									<Name>Increase Energy Efficiency</Name>
+									<Description>and operational efficiency for Air Force systems</Description>
+									<Map>
+										<Type>Supports</Type>
+										<MappedIdentifier>Intent</MappedIdentifier>
+									</Map>
+									<Map>
+										<Type>Output</Type>
+										<MappedIdentifier>DecreasedAmount</MappedIdentifier>
+									</Map>
+								</SuccessFactor>
+								<SuccessFactor>
+									<Identifier>DecreasedAmount</Identifier>
+									<Name>Decreased amount of energy</Name>
+									<Description>required by Air Force systems and operations without negative mission impacts</Description>
+									<Map>
+										<Type>Supports</Type>
+										<MappedIdentifier>ExpectedOutcome</MappedIdentifier>
+									</Map>
+								</SuccessFactor>
+								<SuccessFactor>
+									<Name>Enhance Capabilities</Name>
+									<Description>by focusing on the energy to achieve the Air Force mission</Description>
+									<Map>
+										<Type>Supports</Type>
+										<MappedIdentifier>Intent</MappedIdentifier>
+									</Map>
+									<Map>
+										<Type>Output</Type>
+										<MappedIdentifier>IncreasedFlexibility</MappedIdentifier>
+									</Map>
+								</SuccessFactor>
+								<SuccessFactor>
+									<Identifier>IncreasedFlexibility</Identifier>
+									<Name>Increased Flexibility</Name>
+									<Description>range, and endurance in all operations</Description>
+									<Map>
+										<Type>Supports</Type>
+										<MappedIdentifier>ExpectedOutcome</MappedIdentifier>
+									</Map>
+								</SuccessFactor>
+								<SuccessFactor>
+									<Name>Build Energy Considerations</Name>
+									<Description>into Air Force research, development, test and evaluation (RDT&E) efforts</Description>
+									<Map>
+										<Type>Supports</Type>
+										<MappedIdentifier>Intent</MappedIdentifier>
+									</Map>
+									<Map>
+										<Type>Output</Type>
+										<MappedIdentifier>MaturedLongTermFocus</MappedIdentifier>
+									</Map>
+								</SuccessFactor>
+								<SuccessFactor>
+									<Identifier>MaturedLongTermFocus</Identifier>
+									<Name>Matured Long Term Focused</Name>
+									<Description>solutions to Air Force energy challenges</Description>
+									<Map>
+										<Type>Supports</Type>
+										<MappedIdentifier>ExpectedOutcome</MappedIdentifier>
+									</Map>
+								</SuccessFactor>
+							</Goal>
+							<Goal>
+								<Identifier>AssureSupply</Identifier>
+								<Name>Assure Supply</Name>
+								<Perspective>
+									<ReferenceIdentifier>ApproachToEnergy</ReferenceIdentifer>
+								</Perspective>
+								<SuccessFactor>
+									<Name>Integrate alternative energy sources</Name>
+									<Description>compatible with mission requirements</Description>
+									<Map>
+										<Type>Supports</Type>
+										<MappedIdentifier>Intent</MappedIdentifier>
+									</Map>
+									<Map>
+										<Type>Output</Type>
+										<MappedIdentifier>AccessToCleanEnergy</MappedIdentifier>
+									</Map>
+								</SuccessFactor>
+								<SuccessFactor>
+									<Identifier>AccessToCleanEnergy</Identifier>
+									<Name>Access to clean energy</Name>
+									<Description>resources and supply chains based on asset and mission priorities</Description>
+									<Map>
+										<Type>Supports</Type>
+										<MappedIdentifier>ExpectedOutcome</MappedIdentifier>
+									</Map>
+								</SuccessFactor>
+								
+ 
+								<SuccessFactor>
+									<Name>Diversity</Name>
+									<Description>drop-in sources of energy</Description>
+									<Map>
+										<Type>Supports</Type>
+										<MappedIdentifier>Intent</MappedIdentifier>
+									</Map>
+									<Map>
+										<Type>Output</Type>
+										<MappedIdentifier>IncreasedFlexibilityOps</MappedIdentifier>
+									</Map>
+								</SuccessFactor>
+								<SuccessFactor>
+									<Identifier>IncreasedFlexibilityOps</Identifier>
+									<Name>Increased flexibility</Name>
+									<Description>in all operations</Description>
+									<Map>
+										<Type>Supports</Type>
+										<MappedIdentifier>ExpectedOutcome</MappedIdentifier>
+									</Map>
+								</SuccessFactor>
+							</Goal>
+							<Process>
+									<Identifier>GoalApproach></Identifier>
+									<Name>Goal Approach</Name>
+									<Perspective>
+										<Identifier>ApproachToEnergy</Identifier>
+										<Name>Air Force Approach to Energy</Name>
+									</Perspective>
+									<PrimaryActivity>
+										<Identifier>ApproachLoop</Identifier>
+										<Description>Continuous application of innovation and technology</Description>
+										<SupportingActivity>
+												<Identifier>ApproachInnovation</Identifier>
+												<Name>Innovation</Name>
+												<Map>
+													<Type>Input</Type>
+													<Type>Output</Type>
+													<MappedIdentifier>ApproachTech</MappedIdentifier>
+												</Map>
+												<Stakeholders>
+													<Group>
+														<Identifier>Airmen</Identifier>
+														<Name>Airmen</Airmen>
+													</Group>
+													<Group>
+														<Identifier>Allies</Identifier>
+														<Name>Allies</Name>
+													</Group>
+													<Group>
+														<Identifier>Industry</Identifier>
+														<Name>Industry</Name>
+													</Group>
+												</Stakeholders>
+										</SupportingActivity>
+										<SupportingActivity>
+												<Identifier>ApproachTech</Identifier>
+												<Technology>Technology</Technology>
+												<Map>
+													<Type>Input</Type>
+													<Type>Output</Type>
+													<MappedIdentifier>ApproachInnovation</MappedIdentifier>
+												</Map>
+										</SupportingActivity>
+									</PrimaryActivity>
+							</Process>
+							<Assets>
+								<Identifier>USAFEnergyClassification</Identifier>
+								<Name>Air Force Energy Classification
+								<Family>
+									<Identifier>Energy</Identifier>
+									<Name>Energy</Name>
+								</Family>
+								<Asset>
+										<Identifier>OperationalEng</Identifier>
+										<Dimension>
+												<Identifier>Operational</Identifier>
+										</Dimension>
+								</Asset>
+								<Asset>
+										<Identifier>InstallationEng</Identifier>
+										<Dimension>
+												<Identifier>Installation</Identifier>
+										</Dimension>
+								</Asset>
+							</Assets>
+							<Assets>
+								<Asset>
+									<Identifier>Intent</Identifier>
+									<Dimension>
+										<Identifier>IntentVsOutcome</Identifier>
+									</Dimension>
+								</Asset>
+								<Asset>
+									<Identifier>ExpectedOutcome</Identifier>
+									<Dimension>
+										<ReferenceIdentifier>IntentVsOutcome</ReferenceIdentifier>
+									</Dimension>
+								</Asset>
+							</Assets>
+							<Assets>
+								<Identifier>DoDEnergyConsumption</Identifier>
+								<Name>DoD Current State Energy Consumption</Name>
+								<Asset>
+									<Identifier>NonUSAFCurrentStateEnergy</Identifier>
+									<Dimension>
+										<Identifier>EnergyConsumption</Identifier>
+									</Dimension>
+									<Units>
+										<Identifier>Percent</Identifier>
+										<Name>Percent</Name>
+										<Type>Tangible</Type>
+									</Units>
+									<Valuation>52</Valuation>
+								</Asset>
+								<Asset>
+									<Identifier>USAFCurrentStateEnergy</Identifier>
+									<Dimension>
+										<ReferenceIdentifier>EnergyConsumption</ReferenceIdentifier>
+									</Dimension>
+									<Units>
+										<ReferenceIdentifier>Percent</ReferenceIdentifier>
+									</Units>
+									<Valuation>48</Valuation>
+								</Asset>
+							</Assets>
+							<Assets>
+								<Identifier>USAFEnergyCostBreakdown</Identifier>
+								<Asset>
+									<Identifier>USAFVehicles</Identifier>
+									<Dimension>
+										<Identifier>EnergyCost</Identifier>
+									</Dimension>
+									<Units><ReferenceIdentifer>Percent</ReferenceIdentifier></Units>
+									<Type>Tangible</Type>
+									<Valuation>3</Valuation>
+								</Asset>
+								<Asset>
+									<Identifier>USAFFacilities</Identifier>
+									<Dimension><ReferenceIdentifier>EnergyCost</ReferenceIdentifier></Dimension>
+									<Units><ReferenceIdentifer>Percent</ReferenceIdentifier></Units>
+									<Type>Tangible</Type>
+									<Valuation>11</Valuation>
+								</Asset>
+								<Asset>
+									<Identifier>USAFAviationFuel</Identifier>
+									<Dimension><ReferenceIdentifier>EnergyCost</ReferenceIdentifier></Dimension>
+									<Units><ReferenceIdentifer>Percent</ReferenceIdentifier></Units>
+									<Type>Tangible</Type>
+									<Valuation>86</Valuation>
+								</Asset>
+							</Assets>
+						</Strategy>
+					</Organization>
+				</Stakeholders>
+		 	</Mission>
+			<Proposition>
+				<Identifier>USAFCoreMissions</Identifier>
+				<Name>USAF Core Missions</Name>
+				<Map>
+					<Type>Input</Type>
+					<MappedIdentifier>Energy</MappedIdentifier>
+				</Map>
+				<Value>
+					<Identifier>AirSpaceSuperiorityMission</Identifier>
+					<Name>Air & Space Superiority</Name>
+					<SequenceIndicator>1</SequenceIndicator>
+				</Value>
+				<Value>
+					<Identifier>ISRMission</Identifier>
+					<Name>Intelligence, Surveillance and Reconnaissance (ISR)</Name>
+					<SequenceIndicator>2</SequenceIndicator>
+				</Value>
+				<Value>
+					<Identifier>RapidGlobalMobilityMission</Identifier>
+					<Name>Rapid Global Mobility</Name>
+					<SequenceIndicator>3</SequenceIndicator>
+				</Value>
+				<Value>
+					<Identifier>GlobalStrikeMission</Identifier>
+					<Name>Global Strike</Name>
+					<SequenceIndicator>4</SequenceIndicator>
+				</Value>
+				<Value>
+					<Identifier>C2Mission</Identifier>
+					<Name>Command and Control</Name>
+					<SequenceIndicator>5</SequenceIndicator>
+				</Value>
+			</Proposition>
+			<Proposition>
+				<Identifier>StrategicTrends</Identifier>
+				<Name>Strategic Trends</Name>
+				<Value>
+					<Identifier>EmergingBreakthroughs</Identifier>
+					<Name>Rapidly Emerging Technological Breakthroughs</Name>
+				</Value>
+				<Value>
+					<Identifier>GeopoliticalInstability</Identifier>
+					<Name>Geopolitical Instability</Name>
+					<Map>
+						<Type>Input</Type>
+						<MappedIdentifier>Geopolitical</MappedIdentifier>
+					</Map>
+				</Value>
+				<Value>
+					<Identifier>RangeOfOperatingEnv</Identifier>
+					<Name>Wide Range of Operating Environments</Name>
+					<Map>
+						<Type>Input</Input>
+						<MappedIdentifier>OperationalEng</MappedIdentifier>
+					</Map>
+				</Value>
+				<Value>
+					<Identifier>GlobalCommons</Identifier>
+					<Name>Increasing Importance and Vulnerability of Global Commons</Name>
+				</Value>
+			</Proposition>
+		</Strategy>
+	</Organization>
+	<Submitter>
+		<Identifier>JasonLLind</Identifier>
+		<Name>Jason L. Lind, USAF (Sep.)</Name>
+		<GivenName>Jason</GivenName>
+		<Surname>Lind</Surname>
+		<Contact>
+			<Identifier>JasonLindContact</Identifier>
+			<PhoneNumber>
+				<Type>Landline</Type>
+				<Number>+1 608.301.1113</Number>
+			</PhoneNumber>
+			<PhoneNumber>
+				<Type>Cell</Type>
+				<Number>+1 414.788.2820</Number>
+			</PhoneNumber>
+			<EmailAddress>
+				<Email>lind@multiplex.studio</Email>
+			</EmailAdress>
+			<Address>
+				<Type>Institution</Type>
+				<AddressLabel>Mendota Mental Health Institution</AddressLabel>
+				<Street>301 Troy Dr.</Street>
+				<Locality>Madison<Locality>
+				<Region>Wisconsin</Region>
+				<PostalCode>53704</PostalCode>
+				<Country>USA</Country>
+			</Address>
+			<Address>
+				<Type>Home</Type>
+				<Street>W2773 County Rd HH</Street>
+				<Locality>Dalton</Locality>
+				<Region>Wisconsin</Region>
+				<PostalCode>53926</PostalCode>
+				<Country>USA</Country>
+			</Address>
+			<Website>
+				<WebAddress>http://www.linkedin.com/in/odyss3us</WebAddress>
+			</Website>
+		</Contact>
+	</Submitter>
+	<AdministrativeInformation>
+		<StartDate>2017-01-01</StartDate>
+		<EndDate>2036-01-01</EndDate>
+		<PublicationDate>2020-09-30</PublicationDate>
+	</AdministrativeInformation>
+</OrganizationalStrategyDocument>
