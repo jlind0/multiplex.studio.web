@@ -3112,4 +3112,35 @@
 			text-align: center;
 		}
 
+
 	}
+	.image header{
+		height: 40%;
+	}
+	.links ul {
+		list-style-type: none;
+		margin: 0 20px;
+		padding: 0px;
+		overflow: hidden;
+		width: calc(100% - 40px);
+		display: flexbox;
+	  }
+	 .links li {
+		display: inline;
+		width: 25%
+	  }
+	  .links li:last-child {
+		border-right: none;
+	  }
+	  .links li a{
+		  flex-wrap: nowrap;
+	  }
+	  .links li a span{
+		  display: inline-block;
+	  }
+	  .document-icon {
+		  vertical-align: middle;
+		  width: 40px;
+		  height: 40px;
+		  padding-right: 5px;
+		}

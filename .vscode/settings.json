@@ -1,0 +1,9 @@
+{
+    "spellchecker.documentTypes": [
+
+        "markdown",
+        "latex",
+        "plaintext",
+        "html"
+    ]
+}
