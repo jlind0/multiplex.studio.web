@@ -81,7 +81,7 @@
 								<Identifier>ImproveResilency</Identifier>
 								<Name>Improve Resiliency</Name>
 								<Perspective>
-									<ReferenceIdentifier>ApproachToEnergy</ReferenceIdentifer>
+									<ReferenceIdentifier>ApproachToEnergy</ReferenceIdentifier>
 								</Perspective>
 								<Objective>
 									<Identifier>Resiliency_SinglePointFailure</Identifier>
@@ -163,7 +163,7 @@
 							<Objective>
 									<Identifier>IncorporateAwarenessIntoTraining</Identifier>
 									<Name>Finalize Energy Plans</Name>
-									<Description>Incorporate energy awareness into training by FY18 to enable Airmen to recognize the impact of energy on critical operations<Description>
+									<Description>Incorporate energy awareness into training by FY18 to enable Airmen to recognize the impact of energy on critical operations</Description>
 									<SequenceIdentifier>1.4</SequenceIdentifier>
 									<QualitativePerformanceIndicator>
 										<MeasurementDimension>
@@ -185,7 +185,7 @@
 								<Objective>
 									<Identifier>DevelopPartnerApproach</Identifier>
 									<Name>Develop Partnership Approach</Name>
-									<Description>Develop an approach by FY18 to partner with joint, international, federal, state, local and private partners to improve energy security<Description>
+									<Description>Develop an approach by FY18 to partner with joint, international, federal, state, local and private partners to improve energy security</Description>
 									<SequenceIdentifier>1.5</SequenceIdentifier>
 									<QualitativePerformanceIndicator>
 										<MeasurementDimension>
@@ -207,7 +207,7 @@
 								<Objective>
 									<Identifier>FinalizeEnergyPlans</Identifier>
 									<Name>Finalize Energy Plans</Name>
-									<Description>By FY36 all mission-critical functions will have assured access to a reliable supply to energy at all times<Description>
+									<Description>By FY36 all mission-critical functions will have assured access to a reliable supply to energy at all times</Description>
 									<SequenceIdentifier>1.6</SequenceIdentifier>
 									<QuantitativePerformanceIndicator>
 										<MeasurementDimension>
@@ -314,7 +314,7 @@
 								<Identifier>OptimizeDemand</Identifier>
 								<Name>Optimize Demand</Name>
 								<Perspective>
-									<ReferenceIdentifier>ApproachToEnergy</ReferenceIdentifer>
+									<ReferenceIdentifier>ApproachToEnergy</ReferenceIdentifier>
 								</Perspective>
 								<SuccessFactor>
 									<Name>Increase Energy Efficiency</Name>
@@ -360,7 +360,7 @@
 								</SuccessFactor>
 								<SuccessFactor>
 									<Name>Build Energy Considerations</Name>
-									<Description>into Air Force research, development, test and evaluation (RDT&E) efforts</Description>
+									<Description>into Air Force research, development, test and evaluation (RDT&amp;E) efforts</Description>
 									<Map>
 										<Type>Supports</Type>
 										<MappedIdentifier>Intent</MappedIdentifier>
@@ -384,7 +384,7 @@
 								<Identifier>AssureSupply</Identifier>
 								<Name>Assure Supply</Name>
 								<Perspective>
-									<ReferenceIdentifier>ApproachToEnergy</ReferenceIdentifer>
+									<ReferenceIdentifier>ApproachToEnergy</ReferenceIdentifier>
 								</Perspective>
 								<SuccessFactor>
 									<Name>Integrate alternative energy sources</Name>
@@ -452,7 +452,7 @@
 												<Stakeholders>
 													<Group>
 														<Identifier>Airmen</Identifier>
-														<Name>Airmen</Airmen>
+														<Name>Airmen</Name>
 													</Group>
 													<Group>
 														<Identifier>Allies</Identifier>
@@ -477,7 +477,7 @@
 							</Process>
 							<Assets>
 								<Identifier>USAFEnergyClassification</Identifier>
-								<Name>Air Force Energy Classification
+								<Name>Air Force Energy Classification</Name>
 								<Family>
 									<Identifier>Energy</Identifier>
 									<Name>Energy</Name>
@@ -542,21 +542,21 @@
 									<Dimension>
 										<Identifier>EnergyCost</Identifier>
 									</Dimension>
-									<Units><ReferenceIdentifer>Percent</ReferenceIdentifier></Units>
+									<Units><ReferenceIdentifier>Percent</ReferenceIdentifier></Units>
 									<Type>Tangible</Type>
 									<Valuation>3</Valuation>
 								</Asset>
 								<Asset>
 									<Identifier>USAFFacilities</Identifier>
 									<Dimension><ReferenceIdentifier>EnergyCost</ReferenceIdentifier></Dimension>
-									<Units><ReferenceIdentifer>Percent</ReferenceIdentifier></Units>
+									<Units><ReferenceIdentifier>Percent</ReferenceIdentifier></Units>
 									<Type>Tangible</Type>
 									<Valuation>11</Valuation>
 								</Asset>
 								<Asset>
 									<Identifier>USAFAviationFuel</Identifier>
 									<Dimension><ReferenceIdentifier>EnergyCost</ReferenceIdentifier></Dimension>
-									<Units><ReferenceIdentifer>Percent</ReferenceIdentifier></Units>
+									<Units><ReferenceIdentifier>Percent</ReferenceIdentifier></Units>
 									<Type>Tangible</Type>
 									<Valuation>86</Valuation>
 								</Asset>
@@ -574,7 +574,7 @@
 				</Map>
 				<Value>
 					<Identifier>AirSpaceSuperiorityMission</Identifier>
-					<Name>Air & Space Superiority</Name>
+					<Name>Air &amp; Space Superiority</Name>
 					<SequenceIndicator>1</SequenceIndicator>
 				</Value>
 				<Value>
@@ -617,7 +617,7 @@
 					<Identifier>RangeOfOperatingEnv</Identifier>
 					<Name>Wide Range of Operating Environments</Name>
 					<Map>
-						<Type>Input</Input>
+						<Type>Input</Type>
 						<MappedIdentifier>OperationalEng</MappedIdentifier>
 					</Map>
 				</Value>
@@ -645,12 +645,12 @@
 			</PhoneNumber>
 			<EmailAddress>
 				<Email>lind@multiplex.studio</Email>
-			</EmailAdress>
+			</EmailAddress>
 			<Address>
 				<Type>Institution</Type>
 				<AddressLabel>Mendota Mental Health Institution</AddressLabel>
 				<Street>301 Troy Dr.</Street>
-				<Locality>Madison<Locality>
+				<Locality>Madison</Locality>
 				<Region>Wisconsin</Region>
 				<PostalCode>53704</PostalCode>
 				<Country>USA</Country>
