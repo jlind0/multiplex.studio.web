@@ -248,3 +248,97 @@ Deep water and abyssal deployments demand the most stringent hardware choices, a
 Across all depth regimes, the recommended components are **commercially available** and have been used by NATO or AUKUS members, ensuring a smoother export process. Many items (sensors, batteries, connectors) are classified as low-risk dual-use goods. Notably, underwater acoustic modems can trigger export controls if they employ advanced encryption or high data rate spread-spectrum techniques. The WHOI Micro-Modem, for instance, is categorized under ECCN 5A001.b.1.a (controlled for national security) ([Ordering :: Acoustic Communications Group](https://acomms.whoi.edu/micro-modem/ordering/#:~:text=At%20the%20request%20of%20WHOI%2C,and%20at%20risk%20of%20user)). In our recommendations, we emphasize models with known export-friendly status – for example, Evologics and Sonardyne modems which comply with the open JANUS standard and have been used in NATO exercises ([](https://www.evologics.com/product/attachments/s2c-modems-brochure-49#:~:text=MULTI%EF%9A%BAPROTOCOL%20SUPPORT%20Besides%20EvoLogics%20S2C%2C,and%20SWiG%20underwater%20communication%20protocols)) ([NATO - News: Les communications numériques sous-marines entrent dans une nouvelle ère, 27-Apr.-2017](https://www.nato.int/cps/fr/natohq/news_143247.htm?selectedLocale=en#:~:text=The%20NATO%20Science%20and%20Technology,many%20exciting%20underwater%20communication%20applications)). These are designed with interoperability in mind, a key requirement for AUKUS Pillar II cooperation. Additionally, using COTS hardware means much of the documentation and support is unclassified and openly available, which aids coalition integration. All suggested hardware either meets or aligns with **NATO STANAGs** (e.g. JANUS STANAG 4748 for acoustics, or STANAG 1364 which covers environmental durability of military materiel) and has been proven in relevant environments by organizations like WHOI, CMRE, and defense contractors. This ensures that the HydroFog system can be built rapidly and maintained with readily obtainable parts, while still achieving the resilience and capability required for advanced undersea operations.
 
 **Sources:** The above recommendations and analyses reference manufacturer specifications and defense domain literature. For instance, Teledyne Benthos provides depth and bandwidth specs for acoustic modems ([](https://www.teledynemarine.com/en-us/products/SiteAssets/Benthos_Modem_PSG.pdf#:~:text=Frequency%20%2F%20Typical%20Range2%20Wide,FH%20transmit%2Freceive)), NATO CMRE outlines the JANUS acoustic protocol for interoperability ([NATO - News: Les communications numériques sous-marines entrent dans une nouvelle ère, 27-Apr.-2017](https://www.nato.int/cps/fr/natohq/news_143247.htm?selectedLocale=en#:~:text=The%20NATO%20Science%20and%20Technology,many%20exciting%20underwater%20communication%20applications)), NVIDIA and academic project reports demonstrate the use of AI-capable computing in underwater platforms ([CUREE Robot Dives Deep with Deep Learning | NVIDIA Blog](https://blogs.nvidia.com/blog/coral-reef-decline-curee-robot-jetson-isaac-omniverse/#:~:text=The%20WARPLab%20autonomous%20underwater%20vehicle,the%20tide%20on%20reef%20declines)) ([Hovering AUV](https://frostlab.byu.edu/hovering-auv#:~:text=Our%20vehicle%20is%20equipped%20with,steadily%20in%20most%20underwater%20environments)), and Sonardyne details its long-life subsea nodes’ capabilities (battery endurance, acoustic links, etc.) ([Fetch - Sonardyne](https://www.sonardyne.com/product/fetch/#:~:text=Fetch%20your%20subsea%20data)) ([Fetch - Sonardyne](https://www.sonardyne.com/product/fetch/#:~:text=Smart%20power%20management%20means%20the,memory%20card%20ready%20for%20retrieval)). These sources and others have been cited to ensure accuracy and to show the pedigree of each component in real-world defense or research deployments. The result is a comprehensive, depth-tailored hardware suite for HydroFog that balances cutting-edge performance with reliability and export compliance – ready to support AUKUS collaborative undersea missions.
+
+
+---
+
+### 1. **Cloud Nodes**
+- **Role**: 
+  - Provide high-level decision-making, data analytics, strategic oversight, and long-term data storage.
+  - Typically located at secure, above-water sites or on surface vessels.
+- **Communication Mechanisms**: 
+  - Primarily via high-bandwidth RF or Satellite communication.
+  - Connection with Surface Fog Nodes or Gateways, usually through standard internet protocols (TCP/IP, MQTT, HTTP/HTTPS).
+
+---
+
+### 2. **Surface Fog Nodes (Gateways)**
+- **Role**:
+  - Bridge undersea networks to cloud environments.
+  - Aggregate and preprocess data from underwater nodes.
+  - Provide localized intelligence and decision-making to support quick adaptation.
+- **Communication Mechanisms**:
+  - Above water: High-speed RF or Satellite communications with Cloud Nodes.
+  - Below water: Combination of acoustic modems, optical communication (short-range), or tethered cables (for stationary systems) for communicating with Undersea Fog Nodes.
+  - Can use multi-modal channels for redundancy (optical/acoustic hybrids).
+
+---
+
+### 3. **Undersea Fog Nodes (Core Nodes)**
+- **Role**:
+  - Provide distributed intelligence, caching, edge computing, and routing within the underwater network.
+  - Form the backbone of the SmartFog system, enabling localized processing and communication management.
+- **Communication Mechanisms**:
+  - Acoustic communication (primary): Lower bandwidth, higher latency, robust for long-range undersea communication.
+  - Optical communication (secondary): High bandwidth, short range, used for close-proximity data transfers.
+  - Mesh routing protocols adapted for undersea use, enabling dynamic and adaptive routing to maintain reliable data flows.
+
+---
+
+### 4. **Edge Nodes (Sensor Nodes and UVs - Undersea Vehicles)**
+- **Role**:
+  - Data collection (sensors) or execution of mission-specific tasks (e.g., surveillance, reconnaissance, delivery).
+  - Execute simple to moderate edge-computing tasks.
+- **Communication Mechanisms**:
+  - Primarily acoustic communication due to its robustness underwater.
+  - Occasionally optical links, when higher data rates are required within short ranges.
+  - Communicate primarily with nearby Undersea Fog Nodes, which then aggregate and forward relevant data to higher layers.
+
+---
+
+### 5. **Relay Nodes**
+- **Role**:
+  - Extend range and improve connectivity by relaying messages between nodes that cannot communicate directly due to distance, interference, or environmental conditions.
+  - Typically simpler nodes, optimized for low-power, long-duration deployments.
+- **Communication Mechanisms**:
+  - Acoustic relaying, typically through lightweight acoustic modems.
+  - Minimal local data processing; primarily focused on retransmission and signal integrity enhancement.
+
+---
+
+## Communication Protocols and Patterns in SmartFog:
+
+### Acoustic Communication:
+- Predominantly used for long-distance and robust communication underwater.
+- Low data rates and high latency but extremely reliable for strategic and critical messaging.
+
+### Optical Communication:
+- Short-range but high-bandwidth.
+- Used between nodes in proximity to rapidly exchange high-volume data (images, sensor logs, maps).
+
+### Multi-hop and Mesh Networking:
+- Nodes dynamically create routes through multi-hop relays.
+- Distributed algorithms (like flooding, shortest-path routing, or delay-tolerant protocols) used to optimize routes and maintain redundancy.
+
+### Store-and-Forward Architecture:
+- Nodes store messages and relay them opportunistically.
+- Vital in maintaining message integrity and availability despite intermittent connectivity.
+
+---
+
+## Summary of Communication Flow:
+```
+Cloud Node (strategic analysis)
+        │ (RF or Satellite)
+Surface Fog Node (gateway, pre-processing)
+        │ (Acoustic / Optical, RF for above-water)
+Undersea Fog Node (distributed intelligence, caching)
+        │ (Acoustic Mesh, Optical for close nodes)
+Edge Nodes / UVs / Sensor Nodes (data collection, mission execution)
+        │
+Relay Nodes (extend range, ensure connectivity)
+```
+
+---
+
+**In short**, SmartFog architectures utilize a hierarchy of nodes—ranging from high-level cloud nodes to low-power relay nodes—that strategically combine acoustic, optical, and RF communication methods to achieve a robust, adaptive, secure, and resilient network suitable for complex undersea environments.
