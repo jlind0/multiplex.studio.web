@@ -1,7 +1,3 @@
-Below is an integrated version of your "Cloud-Native Modular Cognitive Warfare Simulation Platform" whitepaper with the expanded multi-modal attack scenarios incorporated. The new section, **"Sample Multi-Modal Attack Scenarios,"** builds on the ideas from the cogwar-simulation document and demonstrates how our platform can simulate a range of hybrid cyber-social attacks. You can merge the following text into your paper as needed.
-
----
-
 # Cloud-Native Modular Cognitive Warfare Simulation Platform
 
 ## Introduction  
