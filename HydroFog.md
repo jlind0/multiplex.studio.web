@@ -62,6 +62,58 @@ HydroFog’s architecture comprises three layers: the physical communication lay
 - **Magnetic Induction/EM Conduction:** Employed for very short-range, high-speed data transfer, such as when an AUV docks with a seabed station.
 - **RF Communication:** Activated only when a node surfaces or when a secure, covert relay is available, ensuring that critical data can be sent to C2 without prolonged surface exposure.
 
+Absolutely — here's a breakdown of **estimated bandwidths** for each communication modality in the HydroFog architecture. These vary widely based on equipment, range, and environmental factors, but I’ll give ballpark figures that reflect realistic current (or near-future) capabilities.
+
+---
+
+### 🌊 **Underwater Communications**
+
+| **Modality**            | **Typical Bandwidth**     | **Range**             | **Notes** |
+|-------------------------|---------------------------|-----------------------|-----------|
+| **Acoustic**            | **<1 kbps to ~50 kbps**   | Up to 10–100 km       | Long range but very low bandwidth and high latency. Common in UUV/UUV meshes. |
+| **Optical (Blue-Green)**| **10 Mbps – 1 Gbps**       | ~10–100 meters        | High bandwidth, low range, requires clear line-of-sight. Sensitive to turbidity. |
+| **EM Conduction / Magnetic Induction** | **100 kbps – 10 Mbps** | Up to ~10 meters     | Used for docking, data offloading. Better in shallow or localized deployments. |
+
+---
+
+### 🚢 **Surface & Subsurface Platforms**
+
+| **Node Type** | **Relevant Modalities**            | **Estimated Bandwidths**      |
+|---------------|------------------------------------|-------------------------------|
+| **Ship**      | Acoustic, EM, RF                   | 1 kbps – 1 Gbps (multi-modal) |
+| **Submarine** | Acoustic, EM, **RF via tether/buoy**| 1 kbps – ~100 Mbps (RF bursts) |
+
+- **Submarines** typically use acoustic comms underwater, and can launch **tethered RF buoys** (burst transmission) for high-speed above-water comms.
+
+---
+
+### ☁️ **Aerial & Satellite Communications**
+
+| **Modality**        | **Typical Bandwidth**     | **Range**             | **Notes** |
+|---------------------|---------------------------|-----------------------|-----------|
+| **RF (UHF/VHF/L/S/X/C/Ku/K/Ka)** | **1 Mbps – 1 Gbps+** | 10s – 1000s of km     | Depends on frequency band and antenna size. SATCOM often in Ka-band for high throughput. |
+| **Optical (FSO)**   | **10 Gbps – 100 Gbps**     | Up to ~10–100 km      | Extremely high bandwidth but line-of-sight dependent. Rarely used for surfacing UVs. |
+| **5G mmWave (Experimental)** | **1–10 Gbps**        | <1 km (LOS)           | Theoretically usable on USVs with mast-mounted mmWave for nearshore ops. |
+
+---
+
+### 🔄 Summary Table (Combined)
+
+| **Link Type**                         | **Bandwidth (est.)**    | **Use Case**                         |
+|--------------------------------------|--------------------------|--------------------------------------|
+| AUV ↔ AUV (Acoustic)                 | 1–20 kbps                | Mesh networking                      |
+| AUV ↔ Seabed Sensor (Acoustic/EM)    | 1–50 kbps / 100 kbps–5 Mbps | Sensor data exfiltration            |
+| AUV ↔ AUV (Optical)                  | 10–100 Mbps              | Close-range, high-speed exchange     |
+| AUV ↔ Submarine (EM/Acoustic)        | 10 kbps – 5 Mbps         | Swarm tasking, C2 comms              |
+| Submarine ↔ Buoy (RF burst)          | ~100 Mbps (burst)        | Short duration stealth updates       |
+| Ship ↔ Satellite (RF)                | 100 Mbps – 1 Gbps        | Operational C2                       |
+| Relay Buoy ↔ UAV/Sat (RF)            | 10 – 500 Mbps            | Gateway to aerial/cloud              |
+| UAV ↔ Sat (RF/Optical)               | 100 Mbps – 10 Gbps       | Theatre-wide command relay           |
+
+---
+
+Let me know if you want this broken down into C2 tiers (e.g. tactical, operational, strategic), or formatted as a JSON file or C# object model for simulations.
+
 ### Fog Computing Layer
 
 Each HydroFog node runs a dedicated software stack that performs:
